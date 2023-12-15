@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Embeded in Youtube",
+  "version": "1.0",
+
+  "description": "Replace YouTube player by embeded player, keep the rest of the page unmodified.",
+
+  "icons": {},
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_start",
+      "js": ["replace.js"]
+    }
+  ]
+}
